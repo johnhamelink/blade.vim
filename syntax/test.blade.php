@@ -16,6 +16,7 @@
 @else
     I have no comments!
 @endif
+@yield
 
 @for ($i =0; $i < count($comments) - 1; $i++)
     The comment body is {{$comments[$i]}}
@@ -29,7 +30,7 @@
     This is a pice of text {{$toast[$a]}}
 @endwhile
 
-@section('navigation')
+@section ('navigation')
     @parent
     <li>Nav Item 3</li>
 @endsection
