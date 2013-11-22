@@ -1,4 +1,10 @@
 {{$test}}
+{{call([
+	$multi,
+	'line',
+	'echo',
+	$test,
+])}}
 <?php $test; ?>
 
 {{$test->object}}
