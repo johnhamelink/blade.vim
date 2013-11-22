@@ -71,7 +71,7 @@ syntax region bladeSectionLoopRegion start="@section" end="@endsection" fold con
 syntax region bladeIfRegion start="@if" end="@endif" fold contains=@phpBladeContainer
 
 " Make the curly braces use the php variable colour scheme
-syntax region bladeVariable start=/{{/ end=/}}/ oneline contains=@phpBladeContainer
+syntax region bladeVariable start=/{{/ end=/}}/ contains=@phpBladeContainer
 
 
 " Clustering
